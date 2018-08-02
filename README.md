@@ -32,3 +32,10 @@ dotcfg remote add origin git@github.com:cianoflynn/dotfiles.git
     rm -r ~/myconf-tmp/
     alias config='/usr/bin/git --git-dir=$HOME/.config/mydotgit/ --work-tree=$HOME'
     
+
+    alias dotcfg='/usr/bin/git --git-dir=$HOME/.config/mydotgit/ --work-tree=$HOME'
+    echo ".cfg" >> .gitignore
+    git clone --bare https://github.com/cianoflynn/dotfiles.git/ $HOME/.config/mydotgit
+    dotcfg checkout
+    dotcfg config --local status.showUntrackedFiles no
+    dotcfg pull
