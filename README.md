@@ -18,14 +18,14 @@ dotcfg config status.showUntrackedFiles no
 3. Add remote repository
 dotcfg remote add origin git@github.com:cianoflynn/dotfiles.git
 
-3 Add dot file to repository and push to git repository
+4. Add dot file to repository and push to git repository
     dotcfg status
     dotcfg add ~/.vimrc
     dotcfg commit -m "Add vimrc"
     dotcfg push -u origin master
     
     
-4 Sync repository and dot files on other computer
+5. Sync repository and dot files on other computer
 
     git clone --separate-git-dir=$HOME/.config/mydotgit/ $HOME/myconf-tmp
     cp ~/myconf-tmp/.gitmodules ~  # If you use Git submodules
