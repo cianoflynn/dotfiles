@@ -1,8 +1,8 @@
 # Cian's dotfiles & Bacukup Process
-Here are my dot files and how I manage them
-Using this method to store 
+Here are my dot files and a description of how I manage them.
 
-1. Initialising the bare git repository for the dot files.
+
+1. Initialise a bare git repository for the dot files in the .config directory.
 http://www.saintsjd.com/2011/01/what-is-a-bare-git-repository/
 https://www.youtube.com/watch?v=krR847J8yPc
 
