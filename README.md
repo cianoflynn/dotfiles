@@ -29,11 +29,12 @@ Video explaining What is a Bare Git Repository\
 
 4. Add dot file to repository and push to git repository
 
-`dotcfg status`\
-`dotcfg add ~/.vimrc`\
-`dotcfg commit -m "Add vimrc"`\
-`dotcfg push -u origin master`\
-    
+```shell
+dotcfg status`\
+dotcfg add ~/.vimrc`\
+dotcfg commit -m "Add vimrc"`\
+dotcfg push -u origin master`\
+ ```
     
 5. Sync repository and dot files on other computer
 
