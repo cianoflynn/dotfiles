@@ -54,6 +54,6 @@ git init --bare $HOME/.config/mydotgit
  
  `alias config='/usr/bin/git --git-dir=$HOME/.config/mydotgit/ --work-tree=$HOME'`
  
-## Credits
-  @StreakyCobra https://news.ycombinator.com/item?id=11070797
-  @durdn https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
+## Credits  
+@StreakyCobra https://news.ycombinator.com/item?id=11070797  
+@durdn https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/  
