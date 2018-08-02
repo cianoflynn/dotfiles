@@ -17,11 +17,12 @@ Video explaining What is a Bare Git Repository\
 	
 
 2. Add alias to .bashrc  
-
-	vim .bashrc\
-	alias dotcfg='/usr/bin/git --git-dir=$HOME/.config/mydotgit/ --work-tree=$HOME'\
-	source ~/.bashrc\
-	dotcfg config status.showUntrackedFiles no\
+```shell
+vim .bashrc\
+alias dotcfg='/usr/bin/git --git-dir=$HOME/.config/mydotgit/ --work-tree=$HOME'\
+source ~/.bashrc\
+dotcfg config status.showUntrackedFiles no\
+ ```
 
 3. Add remote repository\
 
@@ -38,19 +39,22 @@ dotcfg push -u origin master`\
     
 5. Sync repository and dot files on other computer
 
- `alias dotcfg='/usr/bin/git --git-dir=$HOME/.config/mydotgit/ --work-tree=$HOME'`\
- `echo ".cfg" >> .gitignore`\
- `git clone --bare https://github.com/cianoflynn/dotfiles.git/ $HOME/.config/mydotgit`\
- `dotcfg checkout`\
- `dotcfg config --local status.showUntrackedFiles no`\
- `dotcfg pull`\
+```shell
+alias dotcfg='/usr/bin/git --git-dir=$HOME/.config/mydotgit/ --work-tree=$HOME'\
+echo ".cfg" >> .gitignore\
+git clone --bare https://github.com/cianoflynn/dotfiles.git/ $HOME/.config/mydotgit\
+dotcfg checkout\
+dotcfg config --local status.showUntrackedFiles no\
+dotcfg pull\
+```
 
 ## Extra Bits
- `git clone --separate-git-dir=$HOME/.config/mydotgit/ $HOME/myconf-tmp`\
- `cp ~/myconf-tmp/.gitmodules ~  # If you use Git submodules`\
- `rm -r ~/myconf-tmp/`\
- `alias config='/usr/bin/git --git-dir=$HOME/.config/mydotgit/ --work-tree=$HOME'\
- 
+```shell
+git clone --separate-git-dir=$HOME/.config/mydotgit/ $HOME/myconf-tmp\
+cp ~/myconf-tmp/.gitmodules ~  # If you use Git submodules\
+rm -r ~/myconf-tmp/\
+alias config='/usr/bin/git --git-dir=$HOME/.config/mydotgit/ --work-tree=$HOME\
+```
 ## Credits  
 @StreakyCobra https://news.ycombinator.com/item?id=11070797  
 @durdn https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/  
