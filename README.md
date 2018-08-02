@@ -2,9 +2,14 @@
 ## Steps:
 
 1. Initialise a bare git repository for the dot files in the .config directory.\
-  http://www.saintsjd.com/2011/01/what-is-a-bare-git-repository/\
+  
+### What is a bare git repository?
+  
+  http://www.saintsjd.com/2011/01/what-is-a-bare-git-repository/  
  
-### What is a Bare Git Repository?
+ 
+ 
+#### What is a Bare Git Repository?
   [![Explaination of bare git repositories](http://img.youtube.com/vi/krR847J8yPc/0.jpg)](https://www.youtube.com/watch?v=krR847J8yPc)
 
 
