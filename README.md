@@ -1,7 +1,7 @@
 # Cian's Dotfiles & Management Process  
 ### Steps:
 
-1. Initialise a bare git repository for the dot files inside the .config directory.  
+1. *Initialise* a bare git repository for the dot files inside the .config directory.  
 (For ubuntu this is where the user-specific settings are stored.)
 ```shell
 git init --bare $HOME/.config/mydotgit
