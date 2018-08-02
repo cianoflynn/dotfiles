@@ -1,7 +1,7 @@
 # Cian's dotfiles & management process  
 ## Steps:
 
-1. Initialise a bare git repository for the dot files in the .config directory.  
+1. Initialise a bare git repository for the dot files inside the .config directory.  
 (For ubuntu this is where the user-specific settings are stored.)
 ```shell
 git init --bare $HOME/.config/mydotgit
@@ -13,7 +13,7 @@ http://www.saintsjd.com/2011/01/what-is-a-bare-git-repository/
 and also a Video if you prefer\
   [![Explaination of bare git repositories](http://img.youtube.com/vi/krR847J8yPc/0.jpg)](https://www.youtube.com/watch?v=krR847J8yPc)
 
-2. Add alias to .bashrc  
+2. Intially add an alias to .bashrc  
 ```shell
 vim .bashrc\
 alias dotcfg='/usr/bin/git --git-dir=$HOME/.config/mydotgit/ --work-tree=$HOME'\
@@ -22,8 +22,9 @@ dotcfg config status.showUntrackedFiles no\
  ```
 
 3. Add remote repository\
-
- `dotcfg remote add origin git@github.com:cianoflynn/dotfiles.git`\
+```shell
+dotcfg remote add origin git@github.com:cianoflynn/dotfiles.git
+  ```
 
 4. Add dot file to repository and push to git repository
 
