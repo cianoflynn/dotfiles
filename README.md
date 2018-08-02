@@ -1,20 +1,19 @@
-# Cian's dotfiles & Bacukup Process
-Here are my dot files and a description of how I manage them.
+# Cian's dotfiles & management process  
+##Steps  
 
+1. Initialise a bare git repository for the dot files in the .config directory.  
+  http://www.saintsjd.com/2011/01/what-is-a-bare-git-repository/  
+  https://www.youtube.com/watch?v=krR847J8yPc  
 
-1. Initialise a bare git repository for the dot files in the .config directory.
-  http://www.saintsjd.com/2011/01/what-is-a-bare-git-repository/
-  https://www.youtube.com/watch?v=krR847J8yPc
-
-git init --bare $HOME/.config/mydotgit
+	git init --bare $HOME/.config/mydotgit
 	
 
-2. Add alias to .bashrc
+2. Add alias to .bashrc  
 
-	vim .bashrc
-	alias dotcfg='/usr/bin/git --git-dir=$HOME/.config/mydotgit/ --work-tree=$HOME'`
-	source ~/.bashrc
-	dotcfg config status.showUntrackedFiles no
+	vim .bashrc  
+	alias dotcfg='/usr/bin/git --git-dir=$HOME/.config/mydotgit/ --work-tree=$HOME'  
+	source ~/.bashrc  
+	dotcfg config status.showUntrackedFiles no  
 
 3. Add remote repository
 
