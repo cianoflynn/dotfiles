@@ -3,8 +3,8 @@ Here are my dot files and a description of how I manage them.
 
 
 1. Initialise a bare git repository for the dot files in the .config directory.
-http://www.saintsjd.com/2011/01/what-is-a-bare-git-repository/
-https://www.youtube.com/watch?v=krR847J8yPc
+  http://www.saintsjd.com/2011/01/what-is-a-bare-git-repository/
+  https://www.youtube.com/watch?v=krR847J8yPc
 
 git init --bare $HOME/.config/mydotgit
 	
@@ -55,5 +55,5 @@ git init --bare $HOME/.config/mydotgit
  `alias config='/usr/bin/git --git-dir=$HOME/.config/mydotgit/ --work-tree=$HOME'`
  
 ## Credits
-@StreakyCobra https://news.ycombinator.com/item?id=11070797
-@durdn https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
+  @StreakyCobra https://news.ycombinator.com/item?id=11070797
+  @durdn https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
