@@ -3,7 +3,7 @@
 
 1. Initialise a bare git repository for the dot files in the .config directory.\
   
-Article explaining a bare git repository\
+Article explaining a bare git repository  
   
   http://www.saintsjd.com/2011/01/what-is-a-bare-git-repository/  
  
