@@ -11,12 +11,10 @@ git init --bare $HOME/.config/mydotgit
 
 2. Add alias to .bashrc
 
- `vim .bashrc`
- `alias dotcfg='/usr/bin/git --git-dir=$HOME/.config/mydotgit/ --work-tree=$HOME'`
- 
- `source ~/.bashrc`
- 
- `dotcfg config status.showUntrackedFiles no`
+	vim .bashrc
+	alias dotcfg='/usr/bin/git --git-dir=$HOME/.config/mydotgit/ --work-tree=$HOME'`
+	source ~/.bashrc
+	dotcfg config status.showUntrackedFiles no
 
 3. Add remote repository
 
