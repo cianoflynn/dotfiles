@@ -6,13 +6,10 @@
 git init --bare $HOME/.config/mydotgit
  ```
   
-Article explaining a bare git repository  
-  
-  http://www.saintsjd.com/2011/01/what-is-a-bare-git-repository/  
+Here's an article explaining bare git repositories  
+http://www.saintsjd.com/2011/01/what-is-a-bare-git-repository/  
  
- 
- 
-Video explaining What is a Bare Git Repository\
+and also a Video if you prefer\
   [![Explaination of bare git repositories](http://img.youtube.com/vi/krR847J8yPc/0.jpg)](https://www.youtube.com/watch?v=krR847J8yPc)
 
 2. Add alias to .bashrc  
