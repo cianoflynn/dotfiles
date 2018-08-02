@@ -1,7 +1,7 @@
 # Cian's dotfiles & management process  
 ## Steps:
 
-1. Initialise a bare git repository for the dot files in the .config directory.\
+1. Initialise a bare git repository for the dot files in the .config directory.  
   
 Article explaining a bare git repository  
   
