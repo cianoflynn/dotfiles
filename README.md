@@ -1,6 +1,6 @@
-# dotfiles
-My dot files
-Using this method to store https://news.ycombinator.com/item?id=11070797
+# Cian's dotfiles & Bacukup Process
+Here are my dot files and how I manage them
+Using this method to store 
 
 1. Initialising the bare git repository for the dot files.
 http://www.saintsjd.com/2011/01/what-is-a-bare-git-repository/
@@ -45,7 +45,7 @@ git init --bare $HOME/.config/mydotgit
  
  `dotcfg pull`
 
-Extra Bits
+## Extra Bits
  `git clone --separate-git-dir=$HOME/.config/mydotgit/ $HOME/myconf-tmp`
  
  `cp ~/myconf-tmp/.gitmodules ~  # If you use Git submodules`
@@ -53,4 +53,7 @@ Extra Bits
  `rm -r ~/myconf-tmp/`
  
  `alias config='/usr/bin/git --git-dir=$HOME/.config/mydotgit/ --work-tree=$HOME'`
-    
+ 
+## Credits
+@StreakyCobra https://news.ycombinator.com/item?id=11070797
+@durdn https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
