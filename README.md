@@ -46,7 +46,7 @@ dotcfg config --local status.showUntrackedFiles no\
 dotcfg pull\
 ```
 
-## Extra Bits
+#### Extra Bits
 ```shell
 git clone --separate-git-dir=$HOME/.config/mydotgit/ $HOME/myconf-tmp\
 cp ~/myconf-tmp/.gitmodules ~  # If you use Git submodules\
