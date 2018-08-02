@@ -1,5 +1,5 @@
 # Cian's dotfiles & management process  
-## Steps:
+### Steps:
 
 1. Initialise a bare git repository for the dot files inside the .config directory.  
 (For ubuntu this is where the user-specific settings are stored.)
