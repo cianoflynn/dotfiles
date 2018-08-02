@@ -2,6 +2,9 @@
 ## Steps:
 
 1. Initialise a bare git repository for the dot files in the .config directory.  
+```shell
+git init --bare $HOME/.config/mydotgit
+ ```
   
 Article explaining a bare git repository  
   
@@ -11,10 +14,6 @@ Article explaining a bare git repository
  
 Video explaining What is a Bare Git Repository\
   [![Explaination of bare git repositories](http://img.youtube.com/vi/krR847J8yPc/0.jpg)](https://www.youtube.com/watch?v=krR847J8yPc)
-
-
-	git init --bare $HOME/.config/mydotgit
-	
 
 2. Add alias to .bashrc  
 ```shell
