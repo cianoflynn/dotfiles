@@ -1,4 +1,4 @@
-# Cian's Dotfiles & Management Process  
+# Cian's Dotfiles & Their Management
 ### Steps:
 
 1. *Initialise* a bare git repository for the dot files inside the **.config directory**.  
