@@ -1,17 +1,75 @@
-" Title: Cian's.vimrc 
-" Description: Configuration file for Vi Improved, save as ~/.vimrc to use.
-" Author: Cian O'Flynn <cianoflynn@gmail.com>
-" Creation Date: 2017-08-12
-" Last Edit Date: 2017-08-12
-" NB: Don't add setting your don't understand 1st
 
+" RULES 1 OF VIMRC: 'Don't put any lines in your vimrc that you don't understand.'
+"
+" ALL THE VUNDLE STUFF
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
-syntax on "syntax 
-filetype on "filetype detection 
-filetype plugin indent on "filetype-based indentation 
-set tabstop=4 expandtab shiftwidth=4 softtabstop=4 "python-compatible tab setup 
-set foldmethod=indent foldlevel=99 "python-compatible folding
-set number "line numbers
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
 
-" Sources
-" 1 https://blog.bixly.com/setting-up-and-using-vim-for-python-django-development
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" The following are examples of different formats supported.
+" Keep Plugin commands between vundle#begin/end.
+" plugin on GitHub repo
+" Plugin 'tpope/vim-fugitive'
+" plugin from http://vim-scripts.org/vim/scripts.html
+" Plugin 'L9'
+" Git plugin not hosted on GitHub
+" Plugin 'git://git.wincent.com/command-t.git'
+" git repos on your local machine (i.e. when working on your own plugin)
+" Plugin 'file:///home/gmarik/path/to/plugin'
+" The sparkup vim script is in a subdirectory of this repo called vim.
+" Pass the path to set the runtimepath properly.
+" Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Install L9 and avoid a Naming conflict if you've already installed a
+" different version somewhere else.
+" Plugin 'ascenator/L9', {'name': 'newL9'}
+Plugin 'Valloric/YouCompleteMe' 
+Plugin 'w0rp/ale'
+Bundle 'Powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+"
+
+" POWERLINE SETTINGS
+set guifont=Inconsolata\ for\ Powerline:h15
+let g:Powerline_symbols = 'fancy'
+set encoding=utf-8
+set t_Co=256
+set fillchars+=stl:\ ,stlnc:\
+set term=xterm-256color
+set termencoding=utf-8
+set laststatus=2 
+
+" TURN ON SYNTAX HIGHTING
+syntax on
+" SET LINE NUMBER
+set number
+
+" SET TABSTOPS FOR PYTHON
+set tabstop=4
+set cursorline
+
+let g:solarized_termcolors=256
+syntax enable
+set background=dark
+colorscheme solarized
